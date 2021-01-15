@@ -56,7 +56,7 @@ def ai_powered():
     ai = AI()
 
     actions = []
-    actions.extend([identity_manager.scenario_brutforce] * 1)
+    actions.extend([identity_manager.scenario_failed_login] * 1)
     actions.extend([identity_manager.scenario_successful_login] * 5)
     actions.extend([database_connector.scenario_query_executed] * 20)
     actions.extend([request_handler.scenario_handle_200] * 20)
